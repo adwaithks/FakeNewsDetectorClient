@@ -24,7 +24,7 @@
 
 .navbar-logo > h1 > span {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;    
     background-color: rgb(119, 18, 18);
@@ -40,6 +40,8 @@
 .navbar-links > a {
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: inline-block;
     position: relative;
     color: white;
@@ -55,7 +57,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(119, 18, 18);
+    background-color: rgb(255, 0, 0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -91,6 +93,10 @@ main {
     height: fit-content;
 }
 
+.news-submit-form {
+    width: 100%;
+}
+
 .news-input {
     width: 100%;
     border-radius: 2px;
@@ -123,7 +129,7 @@ main {
 }
 
 #particles-js {
-    background: rgb(3, 3, 3);
+    background: rgb(0, 0, 0);
     height: 100%;
 }
 
