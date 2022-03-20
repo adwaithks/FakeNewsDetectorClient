@@ -32,7 +32,7 @@
 }
 
 .navbar-links {
-    width: 250px;
+    width: 220px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -81,7 +81,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     left: 50%;
-    top: 25%;
+    top: 20%;
     transform: translate(-50%, 50%);
     border: solid 1px rgb(58, 58, 58);
     padding: 25px;
@@ -89,12 +89,12 @@ main {
     box-shadow: 0 0 30px rgb(29, 29, 29);
     background-color: rgba(0, 0, 0, 0.24);
     z-index: 2;
-    width: 70%;
+    width: calc(100vw - 300px);
     height: fit-content;
 }
 
 .news-submit-form {
-    width: 100%;
+    width: 100% !important;
 }
 
 .news-input {
@@ -102,7 +102,7 @@ main {
     border-radius: 2px;
     border: none;
     box-shadow: 0 0 30px rgb(39, 39, 39);
-    height: 50px;
+    height: 100px;
     outline: none;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.973);
