@@ -25,15 +25,15 @@
     <section class="section-1">
         <div id="particles-js">
             <main>
-                <form class="news-submit-form" action="">
-                    <textarea class="news-input" placeholder="Enter news headline"></textarea>
+                <form class="news-submit-form" onsubmit="sendNews(event)">
+                    <input class="news-input" placeholder="Enter news headline" oninput="handleValueChange(event)"></input>
                     <button type="submit" class="news-submit">Submit</button>
                 </form>
             </main>
         </div>
     </section>
-    <section class="section-2"></section>
-    <footer></footer>
+    <footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
 </body>
