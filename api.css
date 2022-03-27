@@ -5,7 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* navbar */
 .navbar {
     width: 100%;
     height: 70px;
@@ -20,6 +19,7 @@
 .navbar-logo > h1 {
     color: white;
     margin-left: 20px;
+    font-weight: 800;
 }
 
 .navbar-logo > h1 > span {
@@ -67,75 +67,66 @@
     transform-origin: bottom left;
 }
 
-
-.section-1 {
+.api-docs {
     width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-main {
-    position: absolute;
+    background-color: black;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    left: 50%;
-    top: 18%;
-    transform: translate(-50%, 50%);
-    border: solid 1px rgb(58, 58, 58);
-    padding: 25px;
-    border-radius: 4px;
-    box-shadow: 0 0 30px rgb(29, 29, 29);
-    background-color: rgba(0, 0, 0, 0.24);
-    z-index: 2;
-    width: calc(100vw - 300px);
+    height: 100vh;
+}
+
+
+
+.api-route-card {
+    padding: 10px;
+    width: 90%;
     height: fit-content;
-}
-
-.news-submit-form {
-    width: 100% !important;
-}
-
-.news-input {
-    width: 100%;
-    border-radius: 2px;
-    border: none;
-    box-shadow: 0 0 30px rgb(39, 39, 39);
-    height: 100px;
-    outline: none;
-    font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.973);
-    padding: 10px;
-}
-
-
-.news-submit {
-    box-shadow:  0 0 30px rgba(26, 26, 26, 0.493);
-    background-color: rgb(119, 18, 18);
-    cursor: pointer;
-    color: white;
-    border: none;
-    font-size: 20px;
-    margin-top: 20px;
-    outline: none;
-    padding: 10px;
     border-radius: 3px;
-    width: 100%;
+    border: green solid 1px;
 }
 
-.news-submit:hover {
-    opacity: 0.8;
+h4 {
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
-#particles-js {
-    background: rgb(0, 0, 0);
-    height: 100%;
+.route-status, .route-response, .api-route, .api-method {
+    background-color: rgb(0, 82, 0);
+    padding: 5px;
+    box-sizing: 0 0 30px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px; 
 }
 
+.api-route-upper {
+    display: flex;
+    background-color: rgba(60, 255, 0, 0.226);
+    border: rgba(0, 146, 0, 0.418) solid 1px;
+    border-radius: 5px;
+    color: rgb(245, 245, 245);
+    padding: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.api-route-bottom {
+    padding: 20px;
+    background-color: rgba(60, 255, 0, 0.226);
+    border: rgba(0, 146, 0, 0.418) solid 1px;
+    border-radius: 5px;
+    color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-between;
+}
 
 @media only screen and (max-width: 950px) {
-    main {
-        width: 95%;
+    .api-route-card {
+        width: 98%;
+    }
+    .api-route-upper, .api-route-bottom {
+        padding: 5px !important;
     }
 }
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector Api | Beta</title>
+    <link rel="stylesheet" href="api.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1>FakeN <span>Beta</span></h1>
+        </div>
+        <div class="navbar-links">
+            <a href="/index.html">Home</a>
+            <a href="/api.html">Api</a>
+            <a href="/about">About</a>
+        </div>
+        
+    </nav>
+    <div class="api-docs">
+        
+        <div class="api-route-card">
+            <div class="api-route-upper">
+                <h4 class="api-method">GET</h4>
+                <h4 class="api-route">/api/predict?news={news_headline}</h4>
+            </div>
+            <div class="api-route-bottom">
+                <h4 class="route-status">200 OK</h4>
+                <h4 class="route-response">{
+                    "news": "news_headline",
+                    "prediction": "true",
+                    "status": "200 OK"    
+                }</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
