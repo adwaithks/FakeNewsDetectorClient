@@ -84,7 +84,6 @@ html {
 }
 
 .news-container {
-    display: flex;
     justify-content: center;
     width: 55%;
     margin: auto;
@@ -148,7 +147,7 @@ html {
 }
 
 .red {
-    background-color: rgba(156, 0, 0, 0.655);
+    background-color: rgba(134, 0, 0, 0.454);
     border: red solid 1px;
 }
 
