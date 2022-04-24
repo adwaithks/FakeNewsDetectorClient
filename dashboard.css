@@ -84,7 +84,6 @@ html {
 }
 
 .news-container {
-    justify-content: center;
     width: 55%;
     margin: auto;
     height: 100%;
@@ -153,7 +152,6 @@ html {
 
 @media only screen and (max-width: 950px) {
     .news-container {
-        justify-content: center;
         width: 90%;
         margin: auto;
         height: 100%;
@@ -162,7 +160,6 @@ html {
 
 @media only screen and (max-width: 650px) {
     .news-container {
-        justify-content: center;
         width: 90%;
         margin: auto;
         height: 100%;
