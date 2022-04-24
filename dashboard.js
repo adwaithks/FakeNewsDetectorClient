@@ -41,10 +41,7 @@ function populateNews(news) {
 
 
 function fetchFakeNews() {
-    let data = [];
-    //populateNews(data);
-    let url = 'http://localhost:8000/api/predictednews';
-    //let url = `https://fakenserver.herokuapp.com/api/predictednews`;
+    let url = `https://fakenserver.herokuapp.com/api/predictednews`;
     fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -52,6 +49,5 @@ function fetchFakeNews() {
     }).catch(err => {
         console.log(err);
     });
-    
 }
 
