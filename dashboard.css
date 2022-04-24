@@ -153,7 +153,6 @@ html {
 
 @media only screen and (max-width: 950px) {
     .news-container {
-        display: flex;
         justify-content: center;
         width: 90%;
         margin: auto;
@@ -163,7 +162,6 @@ html {
 
 @media only screen and (max-width: 650px) {
     .news-container {
-        display: flex;
         justify-content: center;
         width: 90%;
         margin: auto;
