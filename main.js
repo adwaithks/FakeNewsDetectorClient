@@ -1,11 +1,11 @@
 const submitButton = document.querySelector('.news-submit');
 
-async function sendNews(event) {
+function sendNews(event) {
   submitButton.disabled = true;
   const news = document.querySelector('.news-input').value;
   event.preventDefault();
   let url = `https://fakenserver.herokuapp.com/api/predict?news=${news}`;
-  await fetch(url).then(res => res.json()).then(data => alert(data.prediction));
+  fetch(url).then(res => res.json()).then(data => alert(data.prediction));
   submitButton.disabled = false;
 }
 
